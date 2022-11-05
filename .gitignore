@@ -3,3 +3,4 @@
 yarn.lock
 # Build files
 /dist
+tsconfig.tsbuildinfo
