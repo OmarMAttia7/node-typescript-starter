@@ -1,0 +1,8 @@
+{
+  "name": "ts-esbuild-starter",
+  "version": "1.0.0",
+  "description": "A starter project for typescript projects with esbuild.",
+  "main": "dist/index.js",
+  "author": "Omar M. Attia",
+  "license": "MIT"
+}
