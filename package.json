@@ -3,6 +3,25 @@
   "version": "1.0.0",
   "description": "A starter project for typescript projects with esbuild.",
   "main": "dist/index.js",
+  "scripts": {
+    "lint": "eslint src --fix",
+    "format": "prettier src --write",
+    "ts-check": "tsc",
+    "prebuild": "$npm_execpath run format && $npm_execpath run lint && $npm_execpath run ts-check",
+    "build": "node build.js",
+    "start": "node dist/index"
+  },
   "author": "Omar M. Attia",
-  "license": "MIT"
+  "type": "module",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "@typescript-eslint/eslint-plugin": "^5.42.0",
+    "@typescript-eslint/parser": "^5.42.0",
+    "esbuild": "^0.15.13",
+    "eslint": "^8.26.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4"
+  }
 }
