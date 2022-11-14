@@ -10,7 +10,7 @@
     "pretest": "$npm_execpath run build",
     "test": "jasmine",
     "start": "node dist/index",
-    "dev": "nodemon --watch './src/**/*.ts' --exec 'ts-node --esm' ./src/index.ts"
+    "watch": "swc ./src -d ./dist -w"
   },
   "author": "Omar M. Attia",
   "type": "module",
@@ -22,6 +22,7 @@
     "@types/node": "^18.11.9",
     "@typescript-eslint/eslint-plugin": "^5.42.0",
     "@typescript-eslint/parser": "^5.42.0",
+    "chokidar": "^3.5.3",
     "eslint": "^8.26.0",
     "eslint-config-prettier": "^8.5.0",
     "jasmine": "^4.5.0",
