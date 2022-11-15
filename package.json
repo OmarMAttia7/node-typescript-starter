@@ -10,7 +10,9 @@
     "pretest": "$npm_execpath run build",
     "test": "jasmine",
     "start": "node dist/index",
-    "watch": "swc ./src -d ./dist -w"
+    "watch-compile": "swc ./src -d ./dist -w",
+    "watch-dev": "nodemon --watch \"dist/**/*\" -e js ./dist/index.js",
+    "dev": "$npm_execpath run watch-compile & $npm_execpath run watch-dev"
   },
   "author": "Omar M. Attia",
   "type": "module",
