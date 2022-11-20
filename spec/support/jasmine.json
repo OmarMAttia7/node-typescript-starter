@@ -1,10 +1,10 @@
 {
   "spec_dir": "dist/tests",
   "spec_files": [
-    "./index.js"
+    "**/*[S]pec.?(m)js"
   ],
   "helpers": [
-    "./helpers/**/*.?(m)js"
+    "helpers/**/*.?(m)js"
   ],
   "env": {
     "stopSpecOnExpectationFailure": false,

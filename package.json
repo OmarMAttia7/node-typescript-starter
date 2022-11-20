@@ -8,7 +8,7 @@
     "ts-check": "tsc",
     "build": "tsc --noEmit --incremental && swc ./src -d ./dist",
     "pretest": "$npm_execpath run build",
-    "test": "jasmine",
+    "test": "node scripts/test",
     "start": "node dist/index",
     "watch-compile": "swc ./src -d ./dist -w",
     "watch-dev": "nodemon --watch \"dist/**/*\" -e js ./dist/index.js",
